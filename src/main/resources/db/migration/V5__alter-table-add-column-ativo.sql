@@ -1,0 +1,1 @@
+ALTER table tb_medicos add column st_ativo boolean not null;

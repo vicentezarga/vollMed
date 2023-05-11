@@ -1,0 +1,30 @@
+{
+    "nome": "Virgulino Ferreira",
+    "email": "ferreira@gmail.com",
+    "telefone": "81982111482",
+    "cpf": "02819216465",
+    "endereco":{
+        "logradouro": "Rua Tetuda Andrade",
+        "bairro": "Canoa de Baixo",
+        "cep": "54510390",
+        "cidade": "João Pessoa",
+        "uf": "PB",
+        "numero": "24",
+        "complemento": "Centro"
+    }
+},
+{
+    "nome": "Anderson Bezerra",
+    "email": "and@gmail.com",
+    "telefone": "81309011482",
+    "cpf": "02419316465",
+    "endereco":{
+        "logradouro": "Rua Lasqueira Andrade",
+        "bairro": "Toma",
+        "cep": "54510380",
+        "cidade": "Fortaleza",
+        "uf": "CE",
+        "numero": "1965",
+        "complemento": "Leste Asiático"
+    }
+}
