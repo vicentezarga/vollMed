@@ -55,7 +55,7 @@ public class TokenService {
 
 	private Instant dataExpiracao() {
 		// TODO Auto-generated method stub
-		return LocalDateTime.now().plusMinutes(10).toInstant(ZoneOffset.of("-03:00"));
+		return LocalDateTime.now().plusDays(1).toInstant(ZoneOffset.of("-03:00"));
 	}
 
 }

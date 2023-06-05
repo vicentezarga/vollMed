@@ -1,3 +1,4 @@
+
 package med.voll.api.medico.controller;
 
 import java.util.List;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import med.voll.api.entidades.Medico;
 import med.voll.api.medico.RepositoryMedico;
@@ -30,6 +32,7 @@ import med.voll.api.medico.dto.MedicoDTO;
 
 @RestController
 @RequestMapping("medicos")
+@SecurityRequirement(name = "bearer-key") 
 public class MedicoController {
 
 	@Autowired
