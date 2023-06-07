@@ -18,6 +18,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import med.voll.api.consulta.dto.ConsultaDTO;
 import med.voll.api.shared.enums.MotivoCancelamento;
 
 @Entity(name = "Consulta")
@@ -63,9 +64,18 @@ public class Consulta {
 		this.ativo = ativo;
 
 	}
-
+	
 	public void cancelarConsulta(MotivoCancelamento motivo) {
 		this.ativo = false;
 		this.motivoCancelamento = motivo;
+	}
+
+	public Consulta(String codigo,Medico medico, Paciente paciente, LocalDateTime data, boolean ativo) {
+		super();
+		this.codigo = codigo;
+		this.medico = medico;
+		this.paciente = paciente;
+		this.data = data;
+		this.ativo = ativo;
 	}
 }

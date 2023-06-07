@@ -22,7 +22,7 @@ import med.voll.api.paciente.dto.PacienteDTO;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of="id")
+@EqualsAndHashCode(of = "id")
 public class Paciente {
 
 	@Id
@@ -43,7 +43,7 @@ public class Paciente {
 
 	@Embedded
 	private Endereco endereco;
-	
+
 	@Column(name = "st_ativo")
 	private boolean ativo;
 
@@ -61,15 +61,16 @@ public class Paciente {
 	}
 
 	public void atualizar(@Valid PacienteAtualizarDTO dto) {
-		
-		if(dto.nome() !=null) {
+
+		if (dto.nome() != null) {
 			this.nome = dto.nome();
 		}
-		if(dto.telefone() !=null) {
+		if (dto.telefone() != null) {
 			this.telefone = dto.telefone();
 		}
-		if(dto.endereco()!=null) {
+		if (dto.endereco() != null) {
 			this.endereco.atualizarEndereco(dto.endereco());
 		}
 	}
+
 }
