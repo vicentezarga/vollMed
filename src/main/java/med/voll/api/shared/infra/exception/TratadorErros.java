@@ -18,7 +18,6 @@ import jakarta.persistence.EntityNotFoundException;
 public class TratadorErros {
 
     @ExceptionHandler(EntityNotFoundException.class)
-    
     public ResponseEntity tratarErro404() {
         return ResponseEntity.notFound().build();
     }
