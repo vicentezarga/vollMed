@@ -1,0 +1,1 @@
+ALTER TABLE tb_paciente ADD COLUMN telefone varchar(11) not null;
